@@ -1,0 +1,48 @@
+html,body {
+  height: 100%;
+}
+
+#header {
+  padding-top: 1px;
+  padding-bottom: 10px;
+  background-image: url(back.jpg);
+}
+
+nav{
+  opacity: 0.7;
+  background-color: black;
+  padding-top: 5px;
+}
+
+aside{
+  background-color: #282923;
+  height: 100%;
+  //width: 30%;
+  padding: 10px 10px 5px 5px;
+}
+
+body {
+  background-color: #fff;
+  //font-family: roboto;
+  overflow: hidden;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 140%;
+  margin: 10px;
+  font-family: consolas;
+  text-align: center;
+}
+
+#blocklyDiv {
+  float: left;
+  height: 80%;
+  width: 70%;
+}
+
+#textarea{
+  font-family: consolas;
+  font-size: 110%;
+  padding: 10px 10px 5px 5px;
+}

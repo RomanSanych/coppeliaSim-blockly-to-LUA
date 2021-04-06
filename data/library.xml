@@ -1,0 +1,331 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="factory_base" id="UBFaAB%A$4gZB?j/4T`1" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="LEFT"></mutation>
+    <field name="NAME">getObjectHandle</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">LEFT</field>
+    <statement name="INPUTS">
+      <block type="input_value" id=";t(~.hCw!i@RXEwk2YIn">
+        <field name="INPUTNAME">handle</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="m7BoS0iplK7..hU+`u`B">
+            <field name="TEXT">Получить идентификатор (хэндл) объекта</field>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="OlP`JUgF0v1%-ooY63tk"></shadow>
+          <block type="type_string" id="[FihIeXq)v?Z(AaqBe~T"></block>
+        </value>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="qG0+Anz#UDC0.+CzK5/T" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="4|pismhz(#@skmM^u!%z" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="OUTPUTTYPE">
+      <shadow type="type_null" id="j5BQG8Qw?zq/zOqnK;aQ"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="$v06,6vrsIgBG*(y_i8b">
+        <mutation colour="#a55b5b"></mutation>
+        <field name="HUE">0</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="7QFK9GM}3:f?TRL08j`5" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">setLinearTargetPosition</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="|WuDKWf9-s[r~QP`@AKO">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="Ul8B-F|3gqkR:uiHqZoa">
+            <field name="TEXT">Установить линейное перемещение объекта (мм)</field>
+          </block>
+        </statement>
+        <next>
+          <block type="input_value" id="zneMD!O0i/R;*9]/Iv@s">
+            <field name="INPUTNAME">handle</field>
+            <field name="ALIGN">LEFT</field>
+            <statement name="FIELDS">
+              <block type="field_static" id="HP.uKklLnC/;*/8[{K?8">
+                <field name="TEXT">Идентификатор объекта</field>
+              </block>
+            </statement>
+            <value name="TYPE">
+              <shadow type="type_null" id="=yv991U-ajy8/Mnq3{f5"></shadow>
+              <block type="type_number" id="o5+oXWR$)99IM!kjw@H|"></block>
+            </value>
+            <next>
+              <block type="input_value" id="lA]}JaRe*8bMS)dtw{9P">
+                <field name="INPUTNAME">targetPosition</field>
+                <field name="ALIGN">LEFT</field>
+                <statement name="FIELDS">
+                  <block type="field_static" id="ofpw+Gy07Dw8+(($m`e-">
+                    <field name="TEXT">Позиция (мм)</field>
+                  </block>
+                </statement>
+                <value name="TYPE">
+                  <shadow type="type_null"></shadow>
+                  <block type="type_number" id="LyT2T{ORH_=jA{~+ufS}"></block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="G(SoQ1,8;YNI$N[FNAHl" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="xuyrb9n3h=a?9]?+6qIZ" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="g2Os=i@mTeNDK.m}([~{"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="q,AOzMq}4l+:(~2s%g93"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="{}{kNXQC%+27O4z%x@iF">
+        <mutation colour="#80a55b"></mutation>
+        <field name="HUE">90</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="p+TyXlR3]KQRZ,C%fA7C" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">setRadialTargetPosition</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="_L?PVo-6V2o4_..Zj2`p">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="}f0G=HEtFUe])/^#_$/A">
+            <field name="TEXT">Установить угол поворота мотора (град)</field>
+          </block>
+        </statement>
+        <next>
+          <block type="input_value" id="SrAV)z_{xg+Y]-j`f8pL">
+            <field name="INPUTNAME">handle</field>
+            <field name="ALIGN">LEFT</field>
+            <statement name="FIELDS">
+              <block type="field_static" id="hn#Pb(.SeKkPqKvzS|L~">
+                <field name="TEXT">Идентификатор объекта</field>
+              </block>
+            </statement>
+            <value name="TYPE">
+              <shadow type="type_null" id="aX~W.,E,|^hP*h)i7=yd"></shadow>
+              <block type="type_number" id="sW1dt_3`tm^JYd~@k]lr"></block>
+            </value>
+            <next>
+              <block type="input_value" id="r~LHRhgHkqMt,hC0uUb=">
+                <field name="INPUTNAME">targetPosition</field>
+                <field name="ALIGN">LEFT</field>
+                <statement name="FIELDS">
+                  <block type="field_static" id="r8N{stQ.vgQm-!+juUHL">
+                    <field name="TEXT">Угол(град)</field>
+                  </block>
+                </statement>
+                <value name="TYPE">
+                  <shadow type="type_null"></shadow>
+                  <block type="type_number" id="OcsdK{[+SnQu{nK@[*b$"></block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="OqIv=P+%`mP%|-c*!O0N" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="mpkmY3f9dKtaitWv2G77" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="+g:S);Y]0Hy7kkFzdwvO"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="6mvpJ.V-hwu(*Y0i/0x3"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id=";iLS.3,]j|ZOvZ8X.y/t">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="O;eSd}N#fCWB6my`Q;a@" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">setObjectTargetVelocity</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="er$C.E/4[uLKQ7hr.C0R">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="!/f;V.9fz=Gm@Pf0E{33">
+            <field name="TEXT">Установить скорость вращения</field>
+          </block>
+        </statement>
+        <next>
+          <block type="input_value" id="5kubHh2{hq3txDQYMQWp">
+            <field name="INPUTNAME">handle</field>
+            <field name="ALIGN">LEFT</field>
+            <statement name="FIELDS">
+              <block type="field_static" id="|kzm?y6oeW|Dbsokq$J.">
+                <field name="TEXT">Идентификатор</field>
+              </block>
+            </statement>
+            <value name="TYPE">
+              <shadow type="type_null"></shadow>
+              <block type="type_number" id="dBz-~vFDHbVnj6i9F)4c"></block>
+            </value>
+            <next>
+              <block type="input_value" id="+VdKkBjLZU%;IL6vRm[=">
+                <field name="INPUTNAME">velocity</field>
+                <field name="ALIGN">LEFT</field>
+                <statement name="FIELDS">
+                  <block type="field_static" id=".gQ_bAl~/?Xz{NJ]5.s;">
+                    <field name="TEXT">Скорость (мм\сек)</field>
+                  </block>
+                </statement>
+                <value name="TYPE">
+                  <shadow type="type_null" id=")7!?X{]iKNF^Y|43_rNZ"></shadow>
+                  <block type="type_number" id="cc{Dz3OO3}R?D?K[Fd:z"></block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="004UjM=_8v.Y,E?EB++K" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="RIfbIrxQos/iWts1KC!j" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="GW9mOWbFJSv5RTt!Q1Ve"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="(O*NYR93T6Wq~e6rH?wN"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="D3-_mLCW5BvT[`J,jajJ">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="o{Uidequ=mc+s:_UVosj" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">sysCall_threadmain</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_statement" id="0|:6OHLT$Xv4lFTa$a![">
+        <field name="INPUTNAME">mainCode</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="wr!B5gPrNnEkn?uER-)u">
+            <field name="TEXT">Основной цикл</field>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="w[`bt#vVc3Xqnbo;TR6g"></shadow>
+        </value>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="N%7C3aW)S8*_D$OZRH`+" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="ye.F9y7aWOk5Koq#H=[c" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="g`pqF[O~jv6Z2f`T3bP~"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="Ze)xT6Pet(w$G*%p3Ykd"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="_Hh+[~w/?fM*Kk=Ech[`">
+        <mutation colour="#935ba5"></mutation>
+        <field name="HUE">285</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="R}vrkZ7jsWiera[%}oxF" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="LEFT"></mutation>
+    <field name="NAME">readProximitySensor</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">LEFT</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="ZoM%R{UdNT=ktPGs9~zE">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="$Pa}]-@J2u]!t~c[M,^n">
+            <field name="TEXT">Считать показания с датчика расстояния</field>
+          </block>
+        </statement>
+        <next>
+          <block type="input_value" id="Hun{XlZ9M-Zl{Y2(-cmi">
+            <field name="INPUTNAME">NAME</field>
+            <field name="ALIGN">LEFT</field>
+            <statement name="FIELDS">
+              <block type="field_static" id="v@28p:E)$^e^R0-#FydG">
+                <field name="TEXT">Идентификатор</field>
+              </block>
+            </statement>
+            <value name="TYPE">
+              <shadow type="type_null" id="dT01yqLj@94|1(qeT-K-"></shadow>
+              <block type="type_number" id="sgd[t.b+2lx:;^5+ZsDv"></block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="ndVAhMNSMaMlE{qqXy9O" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="h9[mm;WInN!*,(Fq,#g6" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="OUTPUTTYPE">
+      <shadow type="type_null" id="^;76.*%l+/Y+sGzLvuai"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="j62qua1bl}uDt48WI4+y">
+        <mutation colour="#5ba5a5"></mutation>
+        <field name="HUE">180</field>
+      </block>
+    </value>
+  </block></xml>
