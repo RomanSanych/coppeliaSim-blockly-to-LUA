@@ -1,8 +1,8 @@
 html,body {
-  background-color: black;
+  background-color: #6d6e6a;
   height: 100%;
   font: ;
-  color: orange;
+  color: white;
 }
 
 #header {
@@ -21,6 +21,7 @@ nav{
 aside{
   background-color: #282923;
   height: 100%;
+  color:white;
   //width: 30%;
   padding: 10px 10px 5px 5px;
 }
@@ -49,5 +50,5 @@ h1 {
 #textarea{
   font-family: consolas;
   font-size: 110%;
-  padding: 10px 10px 5px 5px;
+  //padding: 10px 10px 5px 5px;
 }

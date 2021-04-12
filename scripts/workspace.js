@@ -1,8 +1,33 @@
+'use strict';
+
+let workspace = null;
+
+//Visual theme
+
+Blockly.Themes.Halloween = Blockly.Theme.defineTheme('halloween', {
+  'base': Blockly.Themes.Classic,
+  'componentStyles': {
+    'workspaceBackgroundColour': '#282923',
+    'toolboxBackgroundColour': '#6d6e6a',
+    'toolboxForegroundColour': '#fff',
+    'flyoutBackgroundColour': '#252526',
+    'flyoutForegroundColour': '#ccc',
+    'flyoutOpacity': 1,
+    'scrollbarColour': '#6d6e6a',
+    'insertionMarkerColour': '#fff',
+    'insertionMarkerOpacity': 0.3,
+    'scrollbarOpacity': 0.4,
+    'cursorColour': '#d0d0d0',
+    'blackBackground': '#333'
+  }
+});
+
 /* TODO: Change toolbox XML ID if necessary. Can export toolbox XML from Workspace Factory. */
 var toolbox = document.getElementById("toolbox");
 
 var options = { 
-    toolbox : toolbox, 
+    toolbox : toolbox,
+    theme: Blockly.Themes.Halloween,
     collapse : true, 
     comments : true, 
     disable : true, 
@@ -32,8 +57,10 @@ var options = {
     }
 };
 
-/* Inject your workspace */ 
+/* Inject your workspace */
+function loadWorkspace(){
 var workspace = Blockly.inject("blocklyDiv", options);
+}
 
 /* Load Workspace Blocks from XML to workspace. Remove all code below if no blocks to load */
 
